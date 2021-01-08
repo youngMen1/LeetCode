@@ -5,7 +5,11 @@ package 数组操作.q73_矩阵置零;
  */
 public class Solution {
 
-    public void setZeroes(int[][] matrix) {
+    public static void main(String[] args) {
+        setZeroes(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}});
+    }
+
+    public static void setZeroes(int[][] matrix) {
         //第一行是否需要置零
         boolean row = false;
         //第一列是否需要置零

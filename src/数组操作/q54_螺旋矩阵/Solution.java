@@ -8,6 +8,18 @@ import java.util.List;
  */
 public class Solution {
 
+
+    public static void main(String[] args) {
+        System.out.println(new Solution().spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
+    }
+
+    /**
+     * 可以将矩阵看成若干层，首先输出最外层的元素，其次输出次外层的元素，直到输出最内层的元素。
+     * 定义矩阵的第 kk 层是到最近边界距离为 kk 的所有顶点。
+     * 例如，下图矩阵最外层元素都是第 11 层，次外层元素都是第 22 层，剩下的元素都是第 33 层。
+     * @param matrix
+     * @return
+     */
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> rs = new ArrayList<>();
         if (matrix.length == 0 || matrix[0].length == 0) {
@@ -66,7 +78,4 @@ public class Solution {
         return rs;
     }
 
-    public static void main(String[] args) {
-        System.out.println(new Solution().spiralOrder(new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}));
-    }
 }
